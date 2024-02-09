@@ -13,18 +13,21 @@ SOURCES = containers/graph.cpp containers/labeling.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: creates qpoints qmbrs
-creates: create_dag create_bfl create_int
+creates: create_scc create_dag create_bfl create_int
 qpoints: spareach_int spareach_bfl socreach 3dreach 3dreach_rev #baseline
 qmbrs: spareach_int_mbr #spafirst_ints_mbr_strict spafirst_bfl_mbr_strict 3dreach_mbr 3dreach_rev_mbr
 	
-create_int: $(OBJECTS)
-	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o containers/labeling.o creates/create_int.cpp -o create_int.exec $(LDADD)
+create_scc: $(OBJECTS)
+	$(CC) $(CFLAGS) $(LDFLAGS) creates/create_scc.cpp -o create_scc.exec $(LDADD)
 
 create_dag: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o creates/create_dag.cpp -o create_dag.exec $(LDADD)
 
 create_bfl: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o creates/create_bfl_input.cpp -o create_bfl_input.exec $(LDADD)
+
+create_int: $(OBJECTS)
+	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o containers/labeling.o creates/create_int.cpp -o create_int.exec $(LDADD)
 
 
 spareach_int: $(OBJECTS)
