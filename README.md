@@ -95,7 +95,7 @@ The index time can be calculated for each method, as follows:
   
 
 ### Query performance
-Execute the following scripts:
+Execute the following scripts; output files are automatically created in the ```outputs``` directory.
 
 #### Vary region extent
 ```
