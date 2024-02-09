@@ -61,7 +61,7 @@ $ ./run_spareach-int_MBR.exec inputs/yelp/yelp queries/yelp/queries-range-degree
 ```
 
 ### SpaReach-BFL
-Prerequisites: [DAG](#directed-acyclic-graph) and [.bfl input file](#interval-based-labeling-scheme)
+Prerequisites: [DAG](#directed-acyclic-graph) and [.bfl input file](#[interval-based-labeling-scheme](#special-input-file-for-the-bfl-schemes))
 ```
 $ ./run_spareach-bfl.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
