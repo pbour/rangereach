@@ -11,7 +11,7 @@ Compile the source code using ```make all``` or simple ```make```.
 
 ## Setting up
 - Download the archives for the input files from  
-- Extract them inside the inputs directory
+- Extract inside the inputs directory
 
 
 ## Creates
@@ -22,17 +22,17 @@ The following commands create a directed acyclic graph from a input geosocial ne
 $ ./scripts/create_dag.sh inputs/yelp
 ```
 
-### Create special input file for the BFL schemes
+### Special input file for the BFL schemes
 ```
 $ ./create_bfl.sh inputs/yelp
 ```
 
-### Create interval-based labeling scheme
+### Interval-based labeling scheme
 ```
 $ ./create_int.sh inputs/yelp
 ```
 
-### Create reverse interval-based labeling scheme 
+### Reverse interval-based labeling scheme 
 ```
 $ ./create_dag.sh inputs/yelp reverse
 ```
