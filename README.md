@@ -76,27 +76,19 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 
 ## Experiments
 
-### Handling spatial strongly connected components
+To execute the experiments included in the paper, run the following scripts:
+
+### Vary region extent
 ```
-$ ./scripts/execute_sccs.sh
+$ ./scripts/run_vary-region.sh
 ```
 
-### Determining the best spatial-first method
+### Vary degree 
 ```
-$ ./scripts/execute_spareaches.sh
-```
-
-### Comparing methods: vary region extent
-```
-$ ./scripts/execute_vary-region.sh
+$ ./scripts/run_vary-degree.sh
 ```
 
-### Comparing methods: vary degree 
+### Vary spatial selectivity  
 ```
-$ ./scripts/execute_vary-degree.sh
-```
-
-### Comparing method: vary spatial selectivity  
-```
-$ ./scripts/execute_vary-selectivity.sh
+$ ./scripts/run_vary-selectivity.sh
 ```
