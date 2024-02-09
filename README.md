@@ -48,6 +48,8 @@ $ ./create_dag.sh inputs/yelp/yelp reverse
 The following commands execute the evaluation methods over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the creation of the BFL scheme is also included. We use again the ```yelp``` dataset to exemplify the commands.
 
 ### SpaReach-INT
+Prerequisites: DAG and interval-based labeling scheme
+
 Non-MBR variant
 ```
 $ ./run_spareach_int.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
@@ -59,21 +61,25 @@ $ ./run_spareach-int_MBR.exec inputs/yelp/yelp queries/yelp/queries-range-degree
 ```
 
 ### SpaReach-BFL
+Prerequisites: DAG and .bfl input file
 ```
 $ ./run_spareach-bfl.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### SocReach
+Prerequisites: DAG and interval-based labeling scheme
 ```
 $ ./run_socreach.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### 3DReach
+Prerequisites: DAG and interval-based labeling scheme
 ```
 $ ./run_3dreach.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### 3DReach-Rev
+Prerequisites: DAG and reverse interval-based labeling scheme
 ```
 $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
