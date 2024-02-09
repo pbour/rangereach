@@ -39,7 +39,7 @@ $ ./create_dag.sh inputs/yelp/yelp reverse
 
 
 ## Runs
-The following commands execute an evaluation method over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the create of the BFL labeling scheme is also included. We use the ```yelp``` dataset as example.
+The following commands execute an evaluation method over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the creation of the BFL labeling scheme is also included. We use the ```yelp``` dataset as example.
 
 ### SpaReach-INT
 Non-MBR variant
