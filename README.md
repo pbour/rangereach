@@ -15,7 +15,7 @@ Compile the source code using ```make all``` or simple ```make```.
 
 
 ## Creates
-The following commands create a directed acyclic graph from a input geosocial network, reachability labeling schemes or necessary input files to them. We use the ```yelp``` dataset as example.
+The following commands create a directed acyclic graph from a input geosocial network, reachability labeling schemes or necessary input files to them. We use the ```yelp``` dataset to exemplify the commands.
 
 ### Directed Acyclic Graph
 ```
@@ -39,7 +39,7 @@ $ ./create_dag.sh inputs/yelp/yelp reverse
 
 
 ## Runs
-The following commands execute an evaluation method over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the creation of the BFL labeling scheme is also included. We use the ```yelp``` dataset as example.
+The following commands execute the evaluation methods over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the creation of the BFL scheme is also included. We use again the ```yelp``` dataset to exemplify the commands.
 
 ### SpaReach-INT
 Non-MBR variant
@@ -77,7 +77,7 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 ## Experiments
 
 ### Indexing costs
-The index size can be found in the run report of every method.
+The index size can be found in the execute queries report of every method.
 
 The index time can be calculated for each method, as follows:
 - SpaReach-INT, the [create time for DAG](#directed-acyclic-graph), plus the [create time for the interval-based labeling](#interval-based-labeling-scheme), plus the 2D R-tree building time reported when executing a query file.  
