@@ -76,6 +76,9 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 
 ## Experiments
 
+### Indexing costs
+
+
 ### Query performance
 Execute the following scripts:
 
