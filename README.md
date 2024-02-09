@@ -80,9 +80,11 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 The index size can be found in the run report of every method.
 
 The index time can be calculated for each method, as follows:
-- SpaReach-INT, the [create time for DAG](#directed-acyclic-graph), plus the [create time for interval-based labeling](#interval-based-labeling-scheme), plus the 2D R-tree building time reported when executing a query file.  
-- SpaReach-BFL, the [create time for DAG](#directed-acyclic-graph), plus the building time for BFL scheme and the 2D R-tree building time both reported when executing a query file.
+- SpaReach-INT, the [create time for DAG](#directed-acyclic-graph), plus the [create time for the interval-based labeling](#interval-based-labeling-scheme), plus the 2D R-tree building time reported when executing a query file.  
+- SpaReach-BFL, the [create time for DAG](#directed-acyclic-graph), plus the building time for the BFL scheme and the 2D R-tree building time both reported when executing a query file.
 - SocReach, the [create time for DAG](#directed-acyclic-graph) plus the create time for interval-based labeling.  
+- 3DReach, the [create time for DAG](#directed-acyclic-graph), plus the [create time for the interval-based labeling](#interval-based-labeling-scheme), plus the 3D R-tree building time reported when executing a query file.  
+- 3DReach, the [create time for DAG](#directed-acyclic-graph), plus the [create time for the reverse interval-based labeling](#reverse-interval-based-labeling-scheme), plus the 3D R-tree building time reported when executing a query file.  
   
 
 ### Query performance
