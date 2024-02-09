@@ -86,6 +86,7 @@ int main(int argc, char** argv) {
     else
         cerr << "[ERROR] Unable to open output file";
 //    cout << "[LOG] Writing components to file completed." << endl;
+    cout << "\tdone" << endl;
     cout << "Time elapsed for strongly connected components [secs]: "<< total_time <<endl;
 
 

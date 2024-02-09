@@ -425,7 +425,7 @@ int main(int argc, char **argv)
     outE.close();
     cout << "\tdone" << endl << endl;
 
-    printf("Time elapsed for dag files [secs]: %lf\n", timeDAG);
+    printf("Time elapsed for DAG files [secs]: %lf\n", timeDAG);
 
 
     return 0;
