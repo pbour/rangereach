@@ -24,17 +24,17 @@ $ ./scripts/create_dag.sh inputs/yelp
 
 ### Special input file for the BFL schemes
 ```
-$ ./create_bfl.sh inputs/yelp
+$ ./create_bfl.sh inputs/yelp/yelp
 ```
 
 ### Interval-based labeling scheme
 ```
-$ ./create_int.sh inputs/yelp
+$ ./create_int.sh inputs/yelp/yelp
 ```
 
 ### Reverse interval-based labeling scheme 
 ```
-$ ./create_dag.sh inputs/yelp reverse
+$ ./create_dag.sh inputs/yelp/yelp reverse
 ```
 
 
@@ -44,30 +44,30 @@ The following commands execute an evaluation method over a query file. For the S
 ### SpaReach-INT
 Non-MBR variant
 ```
-$ ./run_spareach_int.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_spareach_int.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 MBR variant
 ```
-$ ./run_spareach-int_MBR.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_spareach-int_MBR.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### SpaReach-BFL
 ```
-$ ./run_spareach-bfl.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_spareach-bfl.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### SocReach
 ```
-$ ./run_socreach.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_socreach.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### 3DReach
 ```
-$ ./run_3dreach.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_3dreach.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 ### 3DReach-Rev
 ```
-$ ./run_3dreach_rev.exec inputs/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
