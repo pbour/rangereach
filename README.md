@@ -15,11 +15,11 @@ Compile the source code using ```make all``` or simple ```make```.
 
 
 ## Creates
-The following commands create a directed acyclic graph from a input geosocial network, reachability labeling schemes or necessary input files to them
+The following commands create a directed acyclic graph from a input geosocial network, reachability labeling schemes or necessary input files to them. We use the ```yelp``` dataset as example.
 
 ### Directed Acyclic Graph
 ```
-$ ./create_dag.sh inputs/yelp
+$ ./scripts/create_dag.sh inputs/yelp
 ```
 
 ### Create special input file for the BFL schemes
@@ -34,56 +34,12 @@ $ ./create_int.sh inputs/yelp
 
 ### Create reverse interval-based labeling scheme 
 ```
-$ ./create_dag.sh inputs/yelp
+$ ./create_dag.sh inputs/yelp reverse
 ```
 
 
-## Run, includes the creatt
+## Runs
+The following commands execute an evaluation method over a query file. For the SpaReach and the 3DReach methods the creation of the 2D R-tree and the 3D R-tree is included, respectively. For the SpaReach-BFL, the create of the BFL labeling scheme is also included.  
 
-Interval-based Labaeling Scheme
+### SpaReach-INT
 
-## SpaReach-INT
-
-### Variant using the Interval Labeling scheme
-
-#### Create
-```
-$ ./spafirst-ints_strict.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-```
-$ ./spafirst-ints_MBR_strict.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-### Variant using the BFL scheme
-
-#### Strict
-```
-$ ./spafirst-bfl_strict.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-```
-$ ./spafirst-bfl_MBR_strict.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-
-## Running SocReach
-
-#### Strict
-```
-$ ./socfirst_strict.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-
-## Running 3DReach
-
-### Normal variant
-
-```
-$ ./3dreach.exec inputs/yelp queries/yelp-0.01-0.qry
-```
-
-### Reverse variant
-```
-$ ./3dreach_rev.exec inputs/yelp queries/yelp-0.01-0.qry
-```
