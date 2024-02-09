@@ -81,6 +81,7 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 
 
 ## Experiments
+Instructions on how to execute the experiments included in the paper.
 
 ### Indexing costs
 The index size can be found in the execute queries report of every method.
