@@ -2,6 +2,10 @@
 
 Source code for the "Fast Geosocial Reachability Queries" paper. For the GeoReach method, the code can be found in the authors repository https://github.com/DataSystemsLab/GeoGraphDB--Neo4j.
 
+<figure>
+  <img src="/figures/running+query3.pdf" alt="RangeReach example" />
+</figure>
+
 ## Dependencies
 - g++/gcc
 - Boost Library 
