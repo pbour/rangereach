@@ -28,7 +28,7 @@ Tha archives already contain the files for the directed acyclic graph of the geo
 $ ./scripts/create_dag.sh inputs/yelp/yelp
 ```
 
-### Special input file for the BFL schemes
+### Special input file for the BFL scheme
 ```
 $ ./create_bfl.sh inputs/yelp/yelp
 ```
@@ -61,7 +61,7 @@ $ ./run_spareach-int_MBR.exec inputs/yelp/yelp queries/yelp/queries-range-degree
 ```
 
 ### SpaReach-BFL
-Prerequisites: [DAG](#directed-acyclic-graph) and [.bfl input file](#[interval-based-labeling-scheme](#special-input-file-for-the-bfl-schemes))
+Prerequisites: [DAG](#directed-acyclic-graph) and [.bfl input file](#special-input-file-for-the-bfl-scheme)
 ```
 $ ./run_spareach-bfl.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
