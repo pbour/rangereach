@@ -16,7 +16,7 @@ The proliferation of location-based services and social networks has given rise 
 Compile the source code using ```make all``` or simple ```make```. 
 
 ## Setting up
-- Download the archives for the input files from  
+- Download the archives for the input files from https://seafile.rlp.net/d/6fa3703e57234b6d9831/
 - Extract inside the inputs directory
 
 
