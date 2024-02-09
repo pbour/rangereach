@@ -9,6 +9,10 @@
 #include <boost/geometry.hpp>
 #include <boost/geometry/geometries/geometries.hpp>
 #include <boost/geometry/index/rtree.hpp>
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/strong_components.hpp>
+#include <boost/algorithm/string.hpp>
+#include <boost/graph/subgraph.hpp>
 #include <fstream>
 #include <string>
 #include <vector>
