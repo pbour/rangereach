@@ -21,7 +21,7 @@ Compile the source code using ```make all``` or simple ```make```.
 
 
 ## Creates
-The following commands create a directed acyclic graph from a input geosocial network, reachability labeling schemes or necessary input files to them. We use the ```yelp``` dataset to exemplify the commands.
+Tha archives already contain the files for the directed acyclic graph of the geosocial networks, the interval-base labeling scheme (original nad reverse) and a .bfl necesary for contructing the BFL schem. Nevertheless, the following commands create anew the above files. We use the ```yelp``` dataset to exemplify the commands.
 
 ### Directed Acyclic Graph
 ```
