@@ -71,3 +71,32 @@ $ ./run_3dreach.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.tx
 ```
 $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
+
+
+
+## Experiments
+
+### Handling spatial strongly connected components
+```
+$ ./scripts/execute_sccs.sh
+```
+
+### Determining the best spatial-first method
+```
+$ ./scripts/execute_spareaches.sh
+```
+
+### Comparing methods: vary region extent
+```
+$ ./scripts/execute_vary-region.sh
+```
+
+### Comparing methods: vary degree 
+```
+$ ./scripts/execute_vary-degree.sh
+```
+
+### Comparing method: vary spatial selectivity  
+```
+$ ./scripts/execute_vary-selectivity.sh
+```
