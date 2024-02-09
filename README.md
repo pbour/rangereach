@@ -76,19 +76,20 @@ $ ./run_3dreach_rev.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-
 
 ## Experiments
 
-To execute the experiments included in the paper, run the following scripts:
+### Query performance
+Execute the following scripts:
 
-### Vary region extent
+#### Vary region extent
 ```
 $ ./scripts/run_vary-region.sh
 ```
 
-### Vary degree 
+#### Vary degree 
 ```
 $ ./scripts/run_vary-degree.sh
 ```
 
-### Vary spatial selectivity  
+#### Vary spatial selectivity  
 ```
 $ ./scripts/run_vary-selectivity.sh
 ```
