@@ -47,24 +47,33 @@ pair<vector<unsigned int>,int> strongly_connected_components(Graph &g) {
 }
 
 
-int main([[maybe_unused]] int argc, char** argv) {
+int main(int argc, char** argv) {
 
-    if(argc != 3) {
-        cout << "[ERROR] Wrong number of arguments" << endl;
+    if (argc < 2)
+    {
+        cerr << endl;
+        cerr << "Usage: " << argv[0] << " INPUT_PREFIX" << endl;
+        cerr << endl;
+        
+        return 1;
     }
 
-    string network_file = argv[1];
-    string scc_file = argv[2];
+    Timer tim;
+    double total_time;
+    string network_file = string(argv[1]) + "-graph.txt";
+    string scc_file = string(argv[1]) + "-scc.txt";
 
-    cout << "[LOG] Input network file: " << network_file << endl;
-    cout << "[LOG] Output file: " << scc_file << endl;
+//    cout << "[LOG] Input network file: " << network_file << endl;
+//    cout << "[LOG] Output file: " << scc_file << endl;
 
     Graph g = load_network(network_file);
 
-    cout << "[LOG] Number of nodes: " << boost::num_vertices(g) << endl;
-    cout << "[LOG] Number of edges: " << boost::num_edges(g) << endl;
+//    cout << "[LOG] Number of nodes: " << boost::num_vertices(g) << endl;
+//    cout << "[LOG] Number of edges: " << boost::num_edges(g) << endl;
 
+    tim.start();
     vector<unsigned int> c = strongly_connected_components(g).first;
+    total_time = tim.stop();
 
     ofstream my_file (scc_file);
     if (my_file.is_open()) {
@@ -75,7 +84,10 @@ int main([[maybe_unused]] int argc, char** argv) {
         my_file.close();
     }
     else
-        cout << "[ERROR] Unable to open output file";
-    cout << "[LOG] Writing components to file completed." << endl;
+        cerr << "[ERROR] Unable to open output file";
+//    cout << "[LOG] Writing components to file completed." << endl;
+    cout << "Time elapsed for strongly connected components [secs]: "<< total_time <<endl;
+
+
     return 0;
 }
