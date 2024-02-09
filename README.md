@@ -19,7 +19,7 @@ The following commands create a directed acyclic graph from a input geosocial ne
 
 ### Directed Acyclic Graph
 ```
-$ ./scripts/create_dag.sh inputs/yelp
+$ ./scripts/create_dag.sh inputs/yelp/yelp
 ```
 
 ### Special input file for the BFL schemes
