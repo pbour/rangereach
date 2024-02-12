@@ -1,13 +1,6 @@
-OS := $(shell uname)
-ifeq ($(OS),Darwin)
-	CC	= /opt/homebrew/bin/g++-13
-	CFLAGS  = -O3 -std=c++14 -w -march=native -I/opt/homebrew/opt/boost/include
-   	LDFLAGS = -ld_classic
-else
-	CC      = g++
-	CFLAGS  = -O3 -mavx -march=native -std=c++14 -w
-	LDFLAGS =
-endif
+CC      = g++
+CFLAGS  = -O3 -mavx -march=native -std=c++14 -w
+LDFLAGS =
 
 SOURCES = containers/graph.cpp containers/labeling.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
