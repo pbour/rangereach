@@ -1,6 +1,6 @@
 # Fast Geosocial Reachability Queries
 
-Source code for the "Fast Geosocial Reachability Queries" paper. For the GeoReach method, the code can be found in the authors repository https://github.com/DataSystemsLab/GeoGraphDB--Neo4j.
+Source code for the "Fast Geosocial Reachability Queries" paper.
 
 <p align="justify">
 The proliferation of location-based services and social networks has given rise to <em>geosocial networks</em>, which model not only the social interactions between users but also their spatial activities. We study the efficient computation of a recently proposed query for geosocial networks called <em>Geosocial Reachability</em> query (RangeReach), which comes as a hybrid of the traditional spatial selection (range) query and the graph reachability problem. Intuitively, given a geosocial network <em>G</em>, a vertex <em>v</em>, and a spatial region <em>R</em>, RangeReach(<em>G,v,R</em>) determines whether <em>v</em> can reach any vertex in <em>G</em> with spatial activity inside <em>R</em>. We consider an interval-based labeling scheme proposed in the past for graph reachability to devise two novel solutions for RangeReach. The first takes a social-first approach, prioritizing the graph reachability predicate.  The second treats both predicates at the same time by transforming the problem of answering RangeReach queries into queries over a three-dimensional space that models the spatial and interval-based reachability information in the geosocial network. Our experimental analysis compares our proposed solutions against a baseline spatial-first approach powered by spatial indexing and a graph reachability technique, as well as the state-of-the-art method for RangeReach queries.</p>
@@ -30,17 +30,17 @@ $ ./scripts/create_dag.sh inputs/yelp/yelp
 
 ### Special input file for the BFL scheme
 ```
-$ ./create_bfl.sh inputs/yelp/yelp
+$ ./create_bfl.exec inputs/yelp/yelp
 ```
 
 ### Interval-based labeling scheme
 ```
-$ ./create_int.sh inputs/yelp/yelp
+$ ./create_int.exec inputs/yelp/yelp
 ```
 
 ### Reverse interval-based labeling scheme 
 ```
-$ ./create_dag.sh inputs/yelp/yelp reverse
+$ ./create_dag.exec inputs/yelp/yelp reverse
 ```
 
 
@@ -117,3 +117,6 @@ $ ./scripts/run_vary-degree.sh
 ```
 $ ./scripts/run_vary-selectivity.sh
 ```
+
+## Notes
+For the GeoReach method, the code can be found in the authors repository https://github.com/DataSystemsLab/GeoGraphDB--Neo4j.
