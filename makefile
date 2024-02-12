@@ -7,8 +7,8 @@ OBJECTS = $(SOURCES:.cpp=.o)
 
 all: creates qpoints qmbrs
 creates: create_scc create_dag create_bfl create_int
-qpoints: spareach_int spareach_bfl socreach 3dreach 3dreach_rev #baseline
-qmbrs: spareach_int_mbr #spafirst_ints_mbr_strict spafirst_bfl_mbr_strict 3dreach_mbr 3dreach_rev_mbr
+qpoints: spareach_int spareach_bfl socreach 3dreach 3dreach_rev
+qmbrs: spareach_int_mbr
 	
 create_scc: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) creates/create_scc.cpp -o create_scc.exec $(LDADD)
