@@ -32,9 +32,6 @@ spareach_int_mbr: $(OBJECTS)
 spareach_bfl: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o containers/labeling.o methods/main_spareach-bfl.cpp -o run_spareach-bfl.exec $(LDADD)
 
-#baseline: $(OBJECTS)
-#	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o methods/main_baseline.cpp -o run_baseline.exec $(LDADD)
-#
 socreach: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) containers/graph.o containers/labeling.o methods/main_socreach.cpp -o run_socreach.exec $(LDADD)
 
