@@ -52,7 +52,7 @@ Prerequisites: [DAG](#directed-acyclic-graph) and [interval-based labeling schem
 
 Non-MBR variant
 ```
-$ ./run_spareach_int.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
+$ ./run_spareach-int.exec inputs/yelp/yelp queries/yelp/queries-range-degree.0.1-2.txt.qry
 ```
 
 MBR variant
