@@ -119,4 +119,4 @@ $ ./scripts/run_vary-selectivity.sh
 ```
 
 ## Notes
-For the GeoReach method, the code can be found in the authors repository https://github.com/DataSystemsLab/GeoGraphDB--Neo4j.
+For the GeoReach method, the code can be found in the authors' repository https://github.com/DataSystemsLab/GeoGraphDB--Neo4j.
