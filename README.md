@@ -13,7 +13,7 @@ The proliferation of location-based services and social networks has given rise 
 - Boost Library 
 
 ## Compile
-Compile the source code using ```make all``` or simple ```make```. 
+Compile the source code using ```make all``` or simply ```make```. 
 
 ## Setting up
 - Download the archives for the input files from https://seafile.rlp.net/d/6fa3703e57234b6d9831/
