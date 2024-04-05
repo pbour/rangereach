@@ -17,7 +17,7 @@ Compile the source code using ```make all``` or simply ```make```.
 
 ## Setting up
 - Download the archives for the input files from https://seafile.rlp.net/d/6fa3703e57234b6d9831/
-- Extract inside the inputs directory
+- Extract the archives inside the inputs directory
 
 
 ## Creates
