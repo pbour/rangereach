@@ -6,7 +6,7 @@
 </figure>
 
 Source code from the following publication:
-- <p align="justify">Panagiotis Bouros, Theodoros Chondrogiannis and Daniel Kowalski, <i>Fast Geosocial Reachability Queries</i>, to appear in the Proceedings of the 28th International Conference on Extending Database Technology (EDBT), Barcelona, Spain, March 25-28 (2025)</p>
+- <p align="justify">Panagiotis Bouros, Theodoros Chondrogiannis and Daniel Kowalski, <i>Fast Geosocial Reachability Queries</i>, Proceedings of the 28th International Conference on Extending Database Technology (EDBT), Barcelona, Spain, March 25-28 (2025)</p>
 
 ## Dependencies
 - g++/gcc
